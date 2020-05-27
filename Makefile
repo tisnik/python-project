@@ -3,7 +3,7 @@ PYTHON=python3
 # can be pip, pip2, or pip3
 PIP_TOOL=pip
 
-PYCODESTYLE_TOOL=pep8
+PYCODESTYLE_TOOL=pycodestyle
 
 TEST_TOOL=pytest
 

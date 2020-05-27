@@ -15,7 +15,12 @@ jobs:
     - stage: unit tests
       script:
         - make test
-
+    - stage: deploy
+      script:
+        - echo "DEPLOY"
 stages:
   - style
   - unit tests
+  - deploy
+script:
+  - python --version
