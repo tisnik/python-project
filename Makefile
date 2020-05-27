@@ -3,6 +3,8 @@ PYTHON=python3
 # can be pip, pip2, or pip3
 PIP_TOOL=pip
 
+PYCODESTYLE_TOOL=pep8
+
 TEST_TOOL=pytest
 
 init:
@@ -13,6 +15,9 @@ run:
 
 test:
 	${TEST_TOOL} -v tests
+
+style:
+	${PYCODESTYLE_TOOL}
 
 coverage:
 	${TEST_TOOL} --cov=average --cov-report term-missing

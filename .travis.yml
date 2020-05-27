@@ -1,0 +1,21 @@
+language: python
+python:
+  - "3.4"
+  - "3.5"
+  - "3.6"
+  - "3.7"
+  - "3.8"
+  - "3.8-dev"  # 3.8 development branch
+  - "nightly"  # nightly build
+jobs:
+  include:
+    - stage: style
+      script:
+        - make style
+    - stage: unit tests
+      script:
+        - make test
+
+stages:
+  - style
+  - unit tests
